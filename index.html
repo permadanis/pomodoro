@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script 
+
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+	
+	
+
+</script>
+
+
+<body>
+
+<div ng-app="myApp">
+<button onclick="setTimeout(myFunction, 25 * 60 * 1000);">Start Pomodoro</button>
+</div>
+<div ng-app="myApp">
+<button onclick="setTimeout(myFunction, 5 * 60 * 1000);">Short Rest 5 minutes</button>
+</div>
+<div ng-app="myApp">
+<button onclick="setTimeout(myFunction, 15 * 60 * 1000);">Long Rest 15 minutes</button>
+</div>
+
+
+<script>
+function myFunction() {
+    
+    var sound = new Audio();
+	sound.src = "Alarm-tone/Alarm-tone.mp3";
+    sound.play();
+
+}
+</script>
+</body>
+</html>
